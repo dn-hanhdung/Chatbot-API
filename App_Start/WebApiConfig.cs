@@ -16,7 +16,7 @@ namespace IT_Career_Counseling
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "itcareercounseling.azurewebsites.net/{controller}/{id}",
+                routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
