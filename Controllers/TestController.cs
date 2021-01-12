@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace IT_Career_Counseling.Controllers
 {
+    [RoutePrefix("api/test")]
     public class TestController : ApiController
     {
         [Route("")]
