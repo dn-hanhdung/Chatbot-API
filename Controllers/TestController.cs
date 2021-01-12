@@ -12,7 +12,7 @@ namespace IT_Career_Counseling.Controllers
     public class TestController : ApiController
     {
         [Route("")]
-        public String GetContent()
+        public IHttpActionResult GetContent()
         {
             string req_txt;
             using (StreamReader reader = new StreamReader(HttpContext.Current.Request.InputStream))
@@ -20,7 +20,7 @@ namespace IT_Career_Counseling.Controllers
                 req_txt = reader.ReadToEnd();
             }
 
-            return req_txt;
+            return Ok(req_txt);
         }
     }
 }
