@@ -19,6 +19,14 @@ namespace IT_Career_Counseling
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultLogin",
+                routeTemplate: "login",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
+            
         }
     }
 }
