@@ -23,7 +23,7 @@ namespace IT_Career_Counseling
             config.Routes.MapHttpRoute(
                 name: "DefaultLogin",
                 routeTemplate: "login",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { controller = "Login", action = "Login" }
             );
 
             
